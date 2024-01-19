@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    background-image: url(munir.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    padding-left: 10vh; 
+
+}
+
+.login {
+    width: 80%;
+    max-width: 400px;
+    background-color: rgba(231, 98, 36, 0.8);
+    padding: 40px;
+    padding-right: 10vh;
+    margin-right: 10vh;
+   
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.login .btn {
+    background-color: rgba(4, 116, 63, 0.8);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login .btn:hover {
+    opacity: 0.8;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.social-icons .fa-facebook {
+    color: #1723c4;
+}
+
+.social-icons .fa-x-twitter {
+    color: #4aa6f1;
+}
+
+.login p {
+    margin-top: 20px;
+}
+
+.login a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
