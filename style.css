@@ -1,6 +1,11 @@
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
+
+
+min-width: 380px;
+
+
 }
 
 .container {
@@ -19,7 +24,7 @@ body {
 }
 
 .login {
-  background-color: rgba(231, 98, 36, 0.8);
+  background-color: rgba(186, 64, 7, 0.504);
 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -80,20 +85,19 @@ form input {
   text-decoration: underline;
 }
 
-/* Add a transition effect to all input fields */
 form input {
  
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Scale up input fields on hover */
+
 form input:hover {
     background-color: #99c417;
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Add a pulsing effect to the sign-in button */
+
 .login .btn {
  
   animation: pulse 2s infinite;
@@ -101,7 +105,6 @@ form input:hover {
 }
 
 
-/* Keyframes for the pulsing effect */
 @keyframes pulse {
   0% {
     transform: scale(0.95);
@@ -114,7 +117,6 @@ form input:hover {
   }
 }
 
-/* Add an animation to social icons on hover */
 .social-icons i {
   
   transition: transform 0.5s ease;
@@ -124,9 +126,30 @@ form input:hover {
   transform: rotate(360deg);
 }
 
-/* Correct the color for the Twitter icon */
 .social-icons .fa-twitter {
   color: #4aa6f1;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 5vh;
+    background-image: url(flower-8342448_1920.jpg);
 
+    
+  }
+  .login{
+      background-color: rgba(0, 255, 179, 0.248);
+  }
+ .header{
+     background-color: rgba(2, 33, 19, 0.988);
+ }
+ 
+}
+@media only screen and (min-device-width : 600px) and (max-device-width : 1024px) {
+ .container{
+     background-image: url(pexels-hans-martha-1059823.jpg);
+ }
+ .login{
+     background-color: #a3cdea75;
+ }
+}
